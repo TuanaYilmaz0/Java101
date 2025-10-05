@@ -27,6 +27,5 @@ public class Not {
         int toplam =(cal+phy+tdb+dif+data);
         double sonuc = toplam / 5;
         System.out.println(sonuc);
-
-    }
+   }
 }
