@@ -1,1 +1,1 @@
-Bu proje, Java dilinde temel programlama alıştırmaları ve küçük uygulamalar içermektedir.
+Bu projeler, Java dilinde temel programlama alıştırmaları ve küçük uygulamalar içermektedir.
