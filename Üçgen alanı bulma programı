@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class UcgenAlan {
+    static void main(String[] args) {
+
+        //değişkenleri oluşturalım
+        int a, b, c;
+        double Alan;
+
+        //Kullanıcıdan verileri alalım
+        Scanner inp = new Scanner(System.in);
+        System.out.println("1.Kenarı Giriniz: ");
+        a = inp.nextInt();
+        System.out.println("2.Kenarı Giriniz: ");
+        b = inp.nextInt();
+        System.out.println("3.Kenarı Giriniz: ");
+        c = inp.nextInt();
+
+        Alan = (a + b + c) / 2;
+        System.out.println("Üçgenin alanı: " + Alan);
+
+    }
+}
