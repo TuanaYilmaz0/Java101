@@ -2,13 +2,13 @@ package Pratik;
 import java.util.Scanner;
 public class Not {
     public static void main (String[] args) {
-     // Degiskenleri olustur
-     int cal,phy,tdb,dif,data;
+        // Degiskenleri olustur
+        int cal,phy,tdb,dif,data;
 
-     // Scanner sinifimizi tanimladik.
-     Scanner inp = new Scanner(System.in);
+        // Scanner sinifimizi tanimladik.
+        Scanner inp = new Scanner(System.in);
 
-     // Kullanicidan degerleri al
+        // Kullanicidan degerleri al
         System.out.print("Calculus notunuz: ");
         cal = inp.nextInt();
 
@@ -25,7 +25,16 @@ public class Not {
         data = inp.nextInt();
 
         int toplam =(cal+phy+tdb+dif+data);
-        double sonuc = toplam / 5;
-        System.out.println(sonuc);
-   }
+        double ortalama = toplam / 5;
+        System.out.println("Not ortalaman:\t ");
+        System.out.println(ortalama);
+
+        //koşul
+        if (ortalama >= 60) {
+            System.out.println("Harika! Sınıfı geçtin.");
+        }
+        else {
+                System.out.println("Maalesef ortalama yetersiz,kaldın.");
+        }
+    }
 }
