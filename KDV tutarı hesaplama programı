@@ -1,0 +1,24 @@
+package Pratik;
+import java.util.Scanner;
+
+public class Kdv {
+    static void main(String[] args) {
+        double tutar,kdvOran,kdvTutar,kdvliTutar;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Ucret tutarını giriniz: ");
+        tutar = inp.nextDouble();
+
+        if (tutar<=1000) {
+            kdvOran = 0.18;
+        }
+        else{
+            kdvOran = 0.08;
+        }
+        kdvTutar = tutar*kdvOran;
+        kdvliTutar= tutar+kdvTutar;
+        System.out.println("KDV'siz Tutar: "+tutar);
+        System.out.println("KDV Oranı: "+kdvOran);
+        System.out.println("KDV Tutarı: "+kdvTutar);
+        System.out.println("KDV'li Tutar: "+kdvliTutar);
+    }
+}
