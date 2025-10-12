@@ -3,7 +3,7 @@ public class Vucut {
     static void main(String[] args) {
         int kg;
         float m;
-        float endeks;
+        float indeks;
         Scanner inp = new Scanner(System.in);
 
         System.out.print("Kilonuzu giriniz: ");
@@ -12,7 +12,7 @@ public class Vucut {
         System.out.print("Boyunuzu metre cinsinden giriniz: ");
         m = inp.nextFloat();
 
-        endeks = (kg/m*m);
-        System.out.print("Vücut kitle endeksiniz: "+endeks);
+        indeks = (kg/m*m);
+        System.out.print("Vücut kitle indeksiniz: "+endeks);
     }
 }
