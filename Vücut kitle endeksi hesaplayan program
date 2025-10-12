@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Vucut {
+    static void main(String[] args) {
+        int kg;
+        float m;
+        float endeks;
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Kilonuzu giriniz: ");
+        kg = inp.nextInt();
+
+        System.out.print("Boyunuzu metre cinsinden giriniz: ");
+        m = inp.nextFloat();
+
+        endeks = (kg/m*m);
+        System.out.print("Vücut kitle endeksiniz: "+endeks);
+    }
+}
