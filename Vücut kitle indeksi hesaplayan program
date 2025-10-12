@@ -13,6 +13,6 @@ public class Vucut {
         m = inp.nextFloat();
 
         indeks = (kg/m*m);
-        System.out.print("Vücut kitle indeksiniz: "+endeks);
+        System.out.print("Vücut kitle indeksiniz: "+indeks);
     }
 }
