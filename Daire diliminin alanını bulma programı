@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Daire {
+    static void main(String[] args) {
+        int r ;
+        double pi = 3.14;
+        int b ;
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Dairenin yarı çapını giriniz: ");
+        r = inp.nextInt();
+
+        System.out.println("Derecenin ölçüsünü giriniz: ");
+        b = inp.nextInt();
+        double alan = (pi * (r*r) * b) / 360;
+
+        System.out.println("Daire diliminin alanı: "+alan);
+    }
+}
