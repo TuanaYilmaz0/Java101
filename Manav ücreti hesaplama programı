@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Manav {
+    static void main(String[] args) {
+
+        double Akg = 2.14;
+        double Ekg = 3.67;
+        double Dkg= 1.11;
+        double Mkg = 0.95;
+        double Pkg = 5.00;
+
+        Scanner inp = new Scanner(System.in);
+        double armut,elma,domates,muz,patlican,toplam;
+
+        System.out.println("Kaç kilo armut alacaksınız?: ");
+        armut = inp.nextDouble()*Akg;
+
+        System.out.println("Kaç kilo elma alacaksınız?: ");
+        elma = inp.nextDouble()*Ekg;
+
+        System.out.println("Kaç kilo domates alacaksınız?: ");
+        domates = inp.nextDouble()*Dkg;
+
+        System.out.println("Kaç kilo muz alacaksınız?: ");
+        muz = inp.nextDouble()*Mkg;
+
+        System.out.println("Kaç kilo patlıcan alacaksınız?: ");
+        patlican = inp.nextDouble()*Pkg;
+
+        toplam = armut+elma+domates+muz+patlican;
+        System.out.println("Toplam ücret: "+toplam);
+
+    }
+}
