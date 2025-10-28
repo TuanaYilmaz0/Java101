@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Artik {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int tarih;
+
+        System.out.print("Yılı giriniz: ");
+        tarih = input.nextInt();
+        if(tarih%4==0){
+            System.out.println(tarih+" bir artık yıldır!");
+        }else if(tarih%400==0){
+            System.out.println(tarih+" bir artık yıl değildir.");
+        }else{
+            System.out.println(tarih+" bir artık yıl değildir");
+        }
+
+    }
+}
