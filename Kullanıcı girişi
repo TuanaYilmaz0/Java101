@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class KullanıcıGirisi {
+    public static void main(String[] args) {
+        String username, password, choice, p2;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Kullanıcı adınız: ");
+        username = inp.nextLine();
+
+        System.out.print("Şifreniz: ");
+        password = inp.nextLine();
+
+        if (username.equals("patika") && password.equals("java123")) {
+            System.out.println("Giriş yaptınız!");
+        } else {
+            System.out.println("Bilgileriniz yanlış!");
+            System.out.println("Şifreyi sıfırlamak ister misiniz ?");
+            choice = inp.nextLine();
+            if (choice.equalsIgnoreCase("Evet")) {
+                System.out.println("Yeni şifreniz: ");
+                p2 = inp.nextLine();
+                if (p2.equals(password)) {
+                    System.out.println("Yeni şifreniz eski şifrenizle aynı olamaz.");
+                } else {
+                    System.out.println("Şifre oluşturuldu.");
+                    password = p2;
+                }
+                System.out.println("Tekrar deneyin.");
+
+              }
+            }
+        }
+    }
